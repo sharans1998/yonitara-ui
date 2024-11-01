@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Poppins, Roboto_Mono } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
@@ -37,8 +38,11 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${roboto_mono.variable} antialiased bg-secondary`}
       >
-        <Navbar />
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

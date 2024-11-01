@@ -19,7 +19,7 @@ const Section: React.FC<SectionProps> = ({
       className={`min-h-screen snap-start snap-always ${className}`}
       style={{ backgroundColor }} // Apply the background color if provided
     >
-      <div className={`${!fullScreen && 'lg:max-w-7xl lg:mx-auto mx-8'}`}>
+      <div className={`${!fullScreen && 'lg:max-w-7xl lg:mx-auto mx-8 px-4'}`}>
         {children}
       </div>
     </section>

@@ -8,19 +8,18 @@ import { GiLotus } from 'react-icons/gi';
 
 const Home = () => {
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+    <div className="snap-y snap-mandatory overflow-y-auto">
       <Section fullScreen>
         <HeroBannerSection
           image="/home/hero-banner-2.png"
           title="Empowering With Informed Choices"
-          subTitle="Wombs intelligence to heal and empower/ holistic womb
-                intelligence"
+          subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
         />
       </Section>
       <Section>
         <ImageTitleDescription
           title="YoniTara"
-          description="At YoniTara Birth, we empower women through a holistic approach to health and wellness. We believe in the natural power of a woman’s body to heal and thrive with the right support. From menarche to menopause, the female body is designed to nurture life, but its wisdom can be overshadowed by misinformation or treating women as weak. "
+          description="At YoniTara Birth, we empower women through a holistic approach to health and wellness. We believe in the natural power of a woman’s body to heal and thrive with the right support. From menarche to menopause, the female body is designed to nurture life, but its wisdom can be overshadowed by misinformation or treating women as weak."
           image="/home/intro-2.jpeg"
           toggle={false}
         />

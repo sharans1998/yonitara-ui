@@ -24,7 +24,7 @@ const ImageTitleDescription = ({
           <Image
             src={image}
             alt="Image"
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full bg-primary bg-opacity-30"
             fill
           />
         </div>
