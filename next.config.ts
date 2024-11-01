@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         hostname: 'sharans1998.github.io',
         pathname: '/yonitara-ui/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'sharans1998.github.io',
+        pathname: '/yonitara-ui/**/*',
+      },
     ],
   },
 };
