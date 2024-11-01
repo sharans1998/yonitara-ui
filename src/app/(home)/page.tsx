@@ -14,7 +14,7 @@ const Home = () => {
           title="Empowering With Informed Choices"
           subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
           image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
-          smallImage="/images/hero-banner-2-sm.png"
+          smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2-sm.png"
         />
       </Section>
       <Section>
