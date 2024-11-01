@@ -1,3 +1,4 @@
+import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Poppins, Roboto_Mono } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
