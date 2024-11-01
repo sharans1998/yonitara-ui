@@ -12,14 +12,14 @@ const CardSection = ({
   cards: CardProps[];
 }) => {
   return (
-    <div className="mx-auto px-4 h-screen flex flex-col justify-center">
+    <div className="mx-auto px-4 my-12 flex flex-col justify-center">
       {title && (
-        <h2 className="text-4xl font-semibold text-center text-primary mb-4">
+        <h2 className="text-2xl md:text-4xl font-semibold text-center text-primary mb-4">
           {title}
         </h2>
       )}
       {subTitle && (
-        <p className="text-lg text-center text-gray-600 w-1/2 mx-auto mb-8">
+        <p className="text-base md:*:text-lg text-center text-gray-600 w-full md:w-1/2 mx-auto mb-8">
           {subTitle}
         </p>
       )}

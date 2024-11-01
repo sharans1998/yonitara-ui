@@ -29,7 +29,7 @@ const ImageTitleDescription = ({
           />
         </div>
         <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
-          <h1 className="text-3xl font-poppins font-semibold text-primary">
+          <h1 className="text-2xl md:text-4xl font-poppins font-semibold text-primary">
             {title}
           </h1>
           <p className="mt-4 text-lg w-full text-start">{description}</p>
