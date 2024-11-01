@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: 'export', // <=== enables static exports
   reactStrictMode: true,
   basePath: '/yonitara-ui',
+  assetPrefix: '/yonitara-ui/',
 };
 
 export default nextConfig;
