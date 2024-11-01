@@ -1,12 +1,12 @@
 'use client';
 // components/Navbar.js
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { RiCloseFill, RiCloseLine } from 'react-icons/ri';
+import { RiCloseFill } from 'react-icons/ri';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
