@@ -24,20 +24,20 @@ const HeroTitle = ({ title }: { title: string }) => {
   };
 
   return (
-    <div className="flex">
-      <motion.h1
-        className="text-6xl font-poppins font-bold text-primary flex"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {letters.map((letter, index) => (
-          <motion.span key={index} variants={letterVariants}>
-            {letter === ' ' ? '\u00A0' : letter} {/* Preserve spaces */}
-          </motion.span>
-        ))}
-      </motion.h1>
-    </div>
+    // <div className="flex">
+    <motion.h1
+      className="text-6xl font-poppins font-bold text-primary flex"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      {letters.map((letter, index) => (
+        <motion.span key={index} variants={letterVariants}>
+          {letter === ' ' ? '\u00A0' : letter} {/* Preserve spaces */}
+        </motion.span>
+      ))}
+    </motion.h1>
+    // </div>
   );
 };
 

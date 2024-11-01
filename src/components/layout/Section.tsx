@@ -5,15 +5,23 @@ interface SectionProps {
   children: React.ReactNode;
   className?: string; // Allow passing custom classes
   backgroundColor?: string; // Optional specific prop for background color
+  fullScreen?: boolean; // Optional specific prop for full screen
 }
 
-const Section: React.FC<SectionProps> = ({ children, className = '', backgroundColor }) => {
+const Section: React.FC<SectionProps> = ({
+  children,
+  className = '',
+  backgroundColor,
+  fullScreen = false,
+}) => {
   return (
     <section
       className={`min-h-screen snap-start snap-always ${className}`}
       style={{ backgroundColor }} // Apply the background color if provided
     >
-      {children}
+      <div className={`${!fullScreen && 'lg:max-w-7xl lg:mx-auto mx-8'}`}>
+        {children}
+      </div>
     </section>
   );
 };
