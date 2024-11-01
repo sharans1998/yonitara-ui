@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.tsx',
   },
 };
 
