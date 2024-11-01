@@ -32,14 +32,14 @@ export default function Navbar() {
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
-        {isMenuOpen ? <RiCloseFill size={32} /> : <RxHamburgerMenu size={32} />}
+        {isMenuOpen ? <RiCloseFill size={24} /> : <RxHamburgerMenu size={24} />}
       </button>
 
       {/* Navigation Links */}
       <ul
         className={`${
-          isMenuOpen ? 'block rounded-b-2xl ' : 'hidden'
-        } md:flex absolute md:static top-12 left-0 w-full md:w-auto md:bg-transparent shadow-md md:shadow-none md:space-x-6`}
+          isMenuOpen ? 'block rounded-b-2xl bg-white pt-2' : 'hidden'
+        } md:flex absolute md:static top-11 left-0 w-full md:w-auto md:bg-transparent shadow-md md:shadow-none md:space-x-6`}
       >
         <li className="p-4 md:p-0">
           <Link href="/" className="text-gray-700 hover:text-blue-500">

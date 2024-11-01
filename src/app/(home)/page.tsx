@@ -11,9 +11,10 @@ const Home = () => {
     <div className="snap-y snap-mandatory overflow-y-auto">
       <Section fullScreen>
         <HeroBannerSection
-          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
           title="Empowering With Informed Choices"
           subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
+          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
+          smallImage="/images/hero-banner-2-sm.png"
         />
       </Section>
       <Section>
