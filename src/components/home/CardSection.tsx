@@ -12,7 +12,7 @@ const CardSection = ({
   cards: CardProps[];
 }) => {
   return (
-    <div className="mx-auto px-4 my-12 flex flex-col justify-center">
+    <div className="">
       {title && (
         <h2 className="text-2xl md:text-4xl font-semibold text-center text-primary mb-4">
           {title}

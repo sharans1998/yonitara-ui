@@ -23,7 +23,12 @@ export default function Navbar() {
     >
       {/* Logo */}
       <div className="w-40 h-12 relative">
-        <Image src="/logo.svg" fill alt="Logo" className="object-contain" />
+        <Image
+          src="https://sharans1998.github.io/yonitara-ui/logo.svg"
+          fill
+          alt="Logo"
+          className="object-contain"
+        />
       </div>
       {/* Hamburger Menu Icon */}
       <button
