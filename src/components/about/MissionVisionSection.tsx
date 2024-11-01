@@ -12,15 +12,19 @@ const MissionVisionSection = ({
     <ContentWrapper>
       <div className="flex flex-col items-center justify-center gap-28 ">
         <div className="flex">
-          <div className="w-5/12">
-            <h2 className="text-4xl font-bold text-primary">Our Mission</h2>
-            <p className="text-lg">{mission}</p>
+          <div className="w-9/12 md:w-5/12">
+            <h2 className="text-2xl md:text-4xl font-bold text-primary">
+              Our Mission
+            </h2>
+            <p className="text-base md:text-lg">{mission}</p>
           </div>
         </div>
         <div className="flex">
-          <div className="w-5/12 ml-auto">
-            <h2 className="text-4xl font-bold text-primary">Our Vision</h2>
-            <p className="text-lg">{vision}</p>
+          <div className="w-9/12 md:w-5/12 ml-auto">
+            <h2 className="text-2xl md:text-4xl font-bold text-primary">
+              Our Vision
+            </h2>
+            <p className="text-base md:text-lg">{vision}</p>
           </div>
         </div>
       </div>
