@@ -16,7 +16,7 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <section
-      className={`min-h-screen snap-start snap-always ${className}`}
+      className={`min-h-screen flex flex-col justify-center snap-start snap-always ${className}`}
       style={{ backgroundColor }} // Apply the background color if provided
     >
       <div

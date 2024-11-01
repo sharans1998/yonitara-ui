@@ -9,14 +9,14 @@ import { GiLotus } from 'react-icons/gi';
 const Home = () => {
   return (
     <div className="snap-y snap-mandatory overflow-y-auto">
-      <Section fullScreen>
+      <div className="relative w-full h-screen">
         <HeroBannerSection
           title="Empowering With Informed Choices"
           subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
           image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
           smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2-sm.png"
         />
-      </Section>
+      </div>
       <Section>
         <ImageTitleDescription
           title="YoniTara"

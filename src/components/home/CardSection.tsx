@@ -1,4 +1,3 @@
-// components/CardSection.tsx
 import React from 'react';
 import Card, { CardProps } from './Card';
 
@@ -12,7 +11,7 @@ const CardSection = ({
   cards: CardProps[];
 }) => {
   return (
-    <div className="">
+    <div className="flex flex-col items-center my-12">
       {title && (
         <h2 className="text-2xl md:text-4xl font-semibold text-center text-primary mb-4">
           {title}
