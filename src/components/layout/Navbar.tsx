@@ -1,7 +1,7 @@
 'use client';
 // components/Navbar.js
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
@@ -17,29 +17,29 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed z-50 bg-white mt-10 top-0 left-0 right-0 p-4 flex items-center justify-between max-w-7xl h-12 md:h-16 mx-4 md:mx-auto ${
+      className={`fixed left-0 right-0 top-0 z-50 mx-10 mt-10 flex h-12 items-center justify-between bg-white p-4 md:h-16 lg:mx-auto lg:max-w-4xl 2xl:mx-auto 2xl:max-w-7xl ${
         isMenuOpen ? 'rounded-t-3xl' : 'rounded-full shadow-md'
       }`}
     >
       {/* Logo */}
-      <div className="w-40 h-12 relative">
+      <Link href="/" className="relative h-12 w-40">
         <Image
           src="https://sharans1998.github.io/yonitara-ui/logo.svg"
           fill
           alt="Logo"
           className="object-contain"
         />
-      </div>
+      </Link>
       {/* Hamburger Menu Icon */}
       <button
-        className="block md:hidden h-8 w-8 mr-3"
+        className="mr-3 block h-8 w-8 md:hidden"
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
         {isMenuOpen ? <RiCloseFill size={24} /> : <RxHamburgerMenu size={24} />}
       </button>
       {/* Navigation Links Large Screen */}
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden space-x-6 md:flex">
         <Link href="/" className="hover:text-blue-500">
           Home
         </Link>
@@ -50,19 +50,19 @@ export default function Navbar() {
       {/* Navigation Links Small Screen */}
       <div
         className={`${
-          isMenuOpen ? 'block md:hidden rounded-b-2xl bg-white pt-2 ' : 'hidden'
-        } flex flex-col md:flex-row absolute md:static top-11 left-0 w-full md:w-auto md:bg-transparent shadow-md md:shadow-none md:space-x-6`}
+          isMenuOpen ? 'block rounded-b-2xl bg-white pt-2 md:hidden' : 'hidden'
+        } absolute left-0 top-11 flex w-full flex-col shadow-md md:static md:w-auto md:flex-row md:space-x-6 md:bg-transparent md:shadow-none`}
       >
         <Link
           href="/"
-          className="m-2 p-2 md:p-0 w-full hover:text-blue-500"
+          className="m-2 w-full p-2 hover:text-blue-500 md:p-0"
           onClick={toggleMenu}
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="m-2 p-2 md:p-0 w-full text-gray-700 hover:text-blue-500"
+          className="text-gray-700 m-2 w-full p-2 hover:text-blue-500 md:p-0"
           onClick={toggleMenu}
         >
           About Us
