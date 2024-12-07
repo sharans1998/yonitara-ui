@@ -1,7 +1,7 @@
 'use client';
 // components/Navbar.js
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
@@ -38,12 +38,19 @@ export default function Navbar() {
       >
         {isMenuOpen ? <RiCloseFill size={24} /> : <RxHamburgerMenu size={24} />}
       </button>
-      {/* Navigation Links */}
+      {/* Navigation Links Large Screen */}
+      <div className="hidden md:flex space-x-6">
+        <Link href="/" className="hover:text-blue-500">
+          Home
+        </Link>
+        <Link href="/about" className="text-gray-700 hover:text-blue-500">
+          About Us
+        </Link>
+      </div>
+      {/* Navigation Links Small Screen */}
       <div
         className={`${
-          isMenuOpen
-            ? 'block md:hidden rounded-b-2xl bg-white pt-2 '
-            : 'hidden md:block'
+          isMenuOpen ? 'block md:hidden rounded-b-2xl bg-white pt-2 ' : 'hidden'
         } flex flex-col md:flex-row absolute md:static top-11 left-0 w-full md:w-auto md:bg-transparent shadow-md md:shadow-none md:space-x-6`}
       >
         <Link

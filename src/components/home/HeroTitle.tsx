@@ -19,25 +19,20 @@ const HeroTitle = ({ title }: { title: string }) => {
   };
 
   const letterVariants = {
-    hidden: { opacity: 0, y: 0 },
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
 
   return (
-    // <div className="flex">
-    <motion.h1
-      className="text-6xl font-poppins font-bold text-primary flex"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      {letters.map((letter, index) => (
-        <motion.span key={index} variants={letterVariants}>
-          {letter === ' ' ? '\u00A0' : letter} {/* Preserve spaces */}
-        </motion.span>
-      ))}
-    </motion.h1>
-    // </div>
+    <motion.div variants={containerVariants} initial="hidden" animate="visible">
+      <motion.h1 className="text-6xl font-poppins font-bold text-primary flex">
+        {letters.map((letter, index) => (
+          <motion.span key={index} variants={letterVariants}>
+            {letter === ' ' ? '\u00A0' : letter} {/* Preserve spaces */}
+          </motion.span>
+        ))}
+      </motion.h1>
+    </motion.div>
   );
 };
 
