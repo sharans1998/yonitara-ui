@@ -11,18 +11,18 @@ const CardSection = ({
   cards: CardProps[];
 }) => {
   return (
-    <div className="flex flex-col items-center my-12">
+    <div className="my-12 flex flex-col items-center">
       {title && (
-        <h2 className="text-2xl md:text-4xl font-semibold text-center text-primary mb-4">
+        <h2 className="mb-4 text-center text-2xl font-semibold text-primary md:text-4xl">
           {title}
         </h2>
       )}
       {subTitle && (
-        <p className="text-base md:*:text-lg text-center text-gray-600 w-full md:w-1/2 mx-auto mb-8">
+        <p className="text-gray-600 mx-auto mb-8 w-full text-center text-base md:w-1/2 md:*:text-lg">
           {subTitle}
         </p>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="flex flex-col gap-8 md:flex-row">
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}

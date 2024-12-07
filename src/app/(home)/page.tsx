@@ -9,7 +9,7 @@ import { GiLotus } from 'react-icons/gi';
 const Home = () => {
   return (
     <div className="snap-y snap-mandatory overflow-y-auto">
-      <div className="relative w-full h-screen">
+      <div className="relative h-screen w-full">
         <HeroBannerSection
           title="Empowering With Informed Choices"
           subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
@@ -39,23 +39,25 @@ const Home = () => {
           subTitle="We offer holistic programs that empower women, whether you're looking to support others through pre and postnatal yoga certifications or heal yourself with yoga and lifestyle sessions focused on gynecological health, pregnancy, and postpartum recovery."
           cards={[
             {
-              icon: <FaChalkboardTeacher />,
+              icon: <FaChalkboardTeacher color="#8d31be" />,
               title: 'Teachers Training Program',
               description:
                 'Specialized training for experts supporting pre and postnatal mothers, beyond yoga. Our certification blends Eastern wisdom with Western science, equipping you to support mothers through pregnancy and postpartum recovery.',
+              route: '/teachers-training',
             },
             {
-              icon: <GiLotus />,
+              icon: <GiLotus color="#8d31be" />,
               title: 'Regular Yoga and Lifestyle Sessions',
               description:
                 'Holistic sessions for every phase of womanhood, from menstrual health to menopause. Our classes combine ancient wisdom with modern insights to nurture physical and emotional well-being.',
+              route: '/yoga-lifestyle-sessions',
             },
-            {
-              icon: <FaUserMd />,
-              title: 'One-on-One Consultation',
-              description:
-                'Personalized support for fertility, pregnancy, and postnatal recovery. We offer tailored advice on yoga, lifestyle, Ayurveda, and therapeutic practices to guide you towards better health and well-being.',
-            },
+            // {
+            //   icon: <FaUserMd />,
+            //   title: 'One-on-One Consultation',
+            //   description:
+            //     'Personalized support for fertility, pregnancy, and postnatal recovery. We offer tailored advice on yoga, lifestyle, Ayurveda, and therapeutic practices to guide you towards better health and well-being.',
+            // },
           ]}
         />
       </Section>

@@ -1,24 +1,32 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+import clsx from 'clsx';
 
 const Button = ({
   variant,
   href,
-  label
+  label,
 }: {
-  variant: 'primary' | 'secondary' | 'tertiary',
-  href: string,
-  label: string
-}
-) => {
-  const primaryClassName = "bg-buttonPrimary hover:bg-buttonSecondary text-primary font-bold py-2 px-4 rounded-full"
-  const secondaryClassName = "bg-white border-buttonSecondary hover:bg-buttonSecondary text-secondary font-bold py-2 px-4 rounded-full"
-
+  variant: 'primary' | 'secondary' | 'tertiary';
+  href: string;
+  label: string;
+}) => {
   return (
-    <Link href={href} className={variant === 'primary' ? primaryClassName : secondaryClassName}>
+    <Link
+      href={href}
+      className={clsx(
+        'rounded-full px-4 py-2',
+        variant === 'primary' &&
+          'bg-buttonPrimary font-bold text-primary hover:bg-buttonSecondary',
+        variant === 'secondary' &&
+          'border-buttonSecondary bg-white font-bold text-secondary hover:bg-buttonSecondary',
+        variant === 'tertiary' &&
+          'border-2 border-primary bg-primary font-bold text-white hover:bg-[#f5e7fc] hover:text-primary'
+      )}
+    >
       {label}
     </Link>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
