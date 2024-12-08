@@ -3,10 +3,9 @@ import React from 'react';
 type ElementItemProps = {
   title: string;
   description: string;
-  image?: string;
 };
 
-const ElementItem = ({ title, description, image }: ElementItemProps) => {
+const ElementItem = ({ title, description }: ElementItemProps) => {
   return (
     <div className="my-4">
       <p className="flex items-center">

@@ -3,7 +3,7 @@ import ImageTitleDescription from '@/components/common/ImageTitleDescription';
 import Section from '@/components/layout/Section';
 import React from 'react';
 import CardSection from '@/components/home/CardSection';
-import { FaChalkboardTeacher, FaUserMd } from 'react-icons/fa';
+import { FaChalkboardTeacher } from 'react-icons/fa';
 import { GiLotus } from 'react-icons/gi';
 
 const Home = () => {

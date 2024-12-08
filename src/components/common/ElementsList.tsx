@@ -4,7 +4,6 @@ import ElementItem from './ElementItem';
 type ElementItemProps = {
   title: string;
   description: string;
-  image?: string;
 };
 type ElementsListProps = {
   title: string;
