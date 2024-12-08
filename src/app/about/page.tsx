@@ -1,11 +1,20 @@
 import MissionVisionSection from '@/components/about/MissionVisionSection';
 import ImageTitleDescription from '@/components/common/ImageTitleDescription';
+import HeroBannerSection from '@/components/home/HeroBannerSection';
 import Section from '@/components/layout/Section';
 import React from 'react';
 
 const About = () => {
   return (
     <div className="snap-y snap-mandatory overflow-y-auto">
+      <div className="relative h-screen w-full">
+        <HeroBannerSection
+          title="About Us"
+          subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
+          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
+          smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2-sm.png"
+        />
+      </div>
       <Section>
         <MissionVisionSection
           mission="Our mission is to empower mothers with holistic health, supported by evidence-based knowledge and expert guidance, enabling them to take control of their motherhood journey."
