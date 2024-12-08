@@ -1,5 +1,6 @@
 import React from 'react';
 import ElementItem from './ElementItem';
+import Image from 'next/image';
 
 type ElementItemProps = {
   title: string;
@@ -19,9 +20,9 @@ const ElementsList: React.FC<ElementsListProps> = ({
   flexReverse,
 }) => {
   return (
-    <div className={`flex ${flexReverse && 'flex-row-reverse'}`}>
-      <div className="bg- min-h-96 flex-1 overflow-hidden rounded-lg bg-[#f5e7fc]">
-        <img src={image} alt={`${title} image`} className="max-w-full" />
+    <div className={`flex w-full ${flexReverse && 'flex-row-reverse'}`}>
+      <div className="relative h-full w-full flex-1 overflow-hidden rounded-lg bg-[#f5e7fc] md:min-h-96">
+        <Image fill src={image} alt={`${title} image`} className="max-w-full" />
       </div>
       <div className="h-full flex-1 justify-between pl-5">
         {title && (
