@@ -7,7 +7,7 @@ interface ContentWrapperProps {
 
 const ContentWrapper: React.FC<ContentWrapperProps> = ({ children }) => {
   return (
-    <section className="min-h-screen h-auto max-w-7xl font flex justify-center mx-4 md:mx-auto">
+    <section className="font mx-4 flex h-auto min-h-screen w-full max-w-7xl justify-center md:mx-auto">
       {children}
     </section>
   );

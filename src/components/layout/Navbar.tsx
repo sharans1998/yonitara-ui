@@ -46,6 +46,12 @@ export default function Navbar() {
         <Link href="/about" className="text-gray-700 hover:text-blue-500">
           About Us
         </Link>
+        <Link
+          href="/teachers-training"
+          className="text-gray-700 hover:text-blue-500"
+        >
+          Teachers Training
+        </Link>
       </div>
       {/* Navigation Links Small Screen */}
       <div

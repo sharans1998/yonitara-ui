@@ -15,7 +15,7 @@ const Button = ({
     <Link
       href={href}
       className={clsx(
-        'rounded-full px-4 py-2',
+        'rounded-full px-8 py-2',
         variant === 'primary' &&
           'bg-buttonPrimary font-bold text-primary hover:bg-buttonSecondary',
         variant === 'secondary' &&

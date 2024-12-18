@@ -16,11 +16,11 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <section
-      className={`flex min-h-screen snap-start snap-always flex-col justify-center ${className}`}
+      className={`flex min-h-screen items-center justify-center ${className}`}
       style={{ backgroundColor }} // Apply the background color if provided
     >
       <div
-        className={`${!fullScreen && 'mx-8 md:mx-16 md:px-4 lg:max-w-6xl xl:mx-auto'}`}
+        className={`${!fullScreen && 'mx-8 w-full md:mx-16 xl:mx-auto xl:max-w-6xl'}`}
       >
         {children}
       </div>
