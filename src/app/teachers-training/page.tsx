@@ -69,6 +69,100 @@ const TeachersTrainingPage = () => {
           ]}
         />
       </Section>
+      <Section backgroundColor="#f5e7fc">
+        <ElementsList
+          toggle
+          title="Master Certification Includes"
+          image="/images/ttc/master-certification-includes.jpg"
+          items={[
+            {
+              title: 'Yoga & Beyond',
+              description:
+                'Strength training and Pilates integrated with yoga.',
+            },
+            {
+              title: 'Garbha Sanskar',
+              description:
+                'Deepen your understanding of ancient Indian wisdom.',
+            },
+            {
+              title: 'Childbirth Education',
+              description: 'Comprehensive techniques for labor support.',
+            },
+            {
+              title: 'Ayurvedic Nutrition',
+              description: 'Personalized dietary guidance for holistic health.',
+            },
+          ]}
+        />
+      </Section>
+      <Section>
+        <ElementsList
+          title="What You'll Learn"
+          image="/images/ttc/what-you-learn.jpg"
+          items={[
+            {
+              title: 'Holistic Pregnancy & Postpartum Support',
+              description:
+                'Beyond simple stretches, learn comprehensive support techniques.',
+            },
+            {
+              title: 'Ancient and Modern Practices',
+              description:
+                'Blend ancient Indian wisdom with the best of Western practices.',
+            },
+            {
+              title: 'Ayurvedic Nutrition',
+              description:
+                'Support pregnancy and postpartum with holistic Ayurvedic nutrition.',
+            },
+            {
+              title: 'Childbirth Education',
+              description:
+                'Advocate for mothers through in-depth knowledge of childbirth.',
+            },
+            {
+              title: 'Labor Support & Guidance',
+              description: 'Provide effective labor support and guidance.',
+            },
+            {
+              title: 'Bonding with Baby',
+              description:
+                'Facilitate bonding activities through Garbha Sanskar.',
+            },
+          ]}
+        />
+      </Section>
+      <Section backgroundColor="#f5e7fc">
+        <ElementsList
+          toggle
+          title="In This Program, You will Learn"
+          image="/images/ttc/in-this-program.jpg"
+          items={[
+            {
+              title: 'Why Moms should NOT be treated delicately',
+              description: 'Uncover the surprising truth!',
+            },
+            {
+              title: '3 Secrets About Pregnancy',
+              description: 'As a Trainer, you MUST KNOW these!',
+            },
+            {
+              title: "India's Most Comprehensive Certification",
+              description: 'Combining the best of the East and the West.',
+            },
+            {
+              title: 'More Than Adjusted Asanas',
+              description: 'The TRUTH about Prenatal and Postnatal Yoga.',
+            },
+            {
+              title: 'Master the 4 Pillars',
+              description:
+                'Yoga, Ayurveda, Garbha Sanskar, and Childbirth Education.',
+            },
+          ]}
+        />
+      </Section>
     </>
   );
 };

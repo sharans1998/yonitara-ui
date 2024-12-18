@@ -1,6 +1,7 @@
 import React from 'react';
 import ElementItem from './ElementItem';
 import Image from 'next/image';
+import ContentWrapper from '../layout/ContentWrapper';
 
 type ElementItemProps = {
   title: string;
@@ -10,33 +11,42 @@ type ElementsListProps = {
   title: string;
   image: string;
   items: ElementItemProps[];
-  flexReverse?: boolean;
+  toggle?: boolean;
 };
 
 const ElementsList: React.FC<ElementsListProps> = ({
   title,
   image,
   items,
-  flexReverse,
+  toggle = false,
 }) => {
   return (
-    <div className={`flex w-full ${flexReverse && 'flex-row-reverse'}`}>
-      <div className="relative h-full w-full flex-1 overflow-hidden rounded-lg bg-[#f5e7fc] md:min-h-96">
-        <Image fill src={image} alt={`${title} image`} className="max-w-full" />
-      </div>
-      <div className="h-full flex-1 justify-between pl-5">
-        {title && (
-          <h2 className="mb-4 text-2xl font-semibold text-primary md:text-4xl">
+    <ContentWrapper>
+      <div
+        className={`flex w-full flex-col items-center justify-center gap-14 lg:flex-row ${
+          toggle && 'flex-col-reverse lg:flex-row-reverse'
+        }`}
+      >
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg lg:w-1/2">
+          <Image
+            src={image}
+            alt="Image"
+            className="h-full w-full bg-primary bg-opacity-30 object-cover"
+            fill
+          />
+        </div>
+        <div className="mt-4 w-full lg:mt-0 lg:w-1/2">
+          <h1 className="font-poppins text-2xl font-semibold text-primary md:text-4xl">
             {title}
-          </h2>
-        )}
-        <ul>
-          {items.map((item, index) => (
-            <ElementItem key={index} {...item} />
-          ))}
-        </ul>
+          </h1>
+          <ul>
+            {items.map((item, index) => (
+              <ElementItem key={index} {...item} />
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </ContentWrapper>
   );
 };
 
