@@ -7,19 +7,21 @@ const HeroBannerSection = ({
   subTitle,
   image,
   smallImage,
+  toggle = false,
 }: {
   title: string;
   subTitle: string;
   image: string;
   smallImage: string;
+  toggle?: boolean;
 }) => {
   return (
-    <div className="w-full h-full relative">
+    <div className="relative h-full w-full">
       {/* Image */}
-      <div className="h-screen w-screen z-0 absolute top-0 left-0">
+      <div className="absolute left-0 top-0 z-0 h-screen w-screen">
         <Image
           src={image}
-          className="object-cover object-center hidden md:block"
+          className="hidden object-cover object-center md:block"
           alt="Hero Banner"
           fill
         />
@@ -34,12 +36,14 @@ const HeroBannerSection = ({
       {/* Text and Title */}
       <div className="absolute z-10 w-full">
         <ContentWrapper>
-          <div className="h-[75vh] w-full md:w-1/2 ml-auto flex flex-col justify-center items-center md:items-end relative">
+          <div
+            className={`relative ${toggle ? 'mr-auto' : 'ml-auto'} flex h-[75vh] w-full flex-col items-center justify-center md:w-1/2 md:items-end`}
+          >
             <div>
-              <h1 className="text-4xl md:text-6xl font-poppins font-semibold text-primary text-center md:text-left">
+              <h1 className="font-poppins text-center text-4xl font-semibold text-primary md:text-left md:text-6xl">
                 {title}
               </h1>
-              <p className="mt-4 text-base md:text-lg w-9/12 text-center md:text-left mx-auto md:ml-0">
+              <p className="mx-auto mt-4 w-9/12 text-center text-base md:ml-0 md:text-left md:text-lg">
                 {subTitle}
               </p>
             </div>

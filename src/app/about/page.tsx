@@ -9,10 +9,11 @@ const About = () => {
     <div className="snap-y snap-mandatory overflow-y-auto">
       <div className="relative h-screen w-full">
         <HeroBannerSection
+          toggle
           title="About Us"
-          subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
-          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
-          smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2-sm.png"
+          subTitle="Wombs intelligence to heal and empower holistic womb intelligence"
+          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-3.png"
+          smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-3-sm.png"
         />
       </div>
       <Section>
