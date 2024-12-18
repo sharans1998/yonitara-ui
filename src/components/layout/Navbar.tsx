@@ -1,7 +1,7 @@
 'use client';
 // components/Navbar.js
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
@@ -10,19 +10,39 @@ import { RiCloseFill } from 'react-icons/ri';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollY = 0;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // Scroll down
+      setIsVisible(false);
+    } else {
+      // Scroll up
+      setIsVisible(true);
+    }
+    lastScrollY = window.scrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-50 mx-10 mt-10 flex h-12 items-center justify-between bg-white p-4 md:h-16 lg:mx-auto lg:max-w-4xl 2xl:mx-auto 2xl:max-w-7xl ${
+      className={`fixed left-0 right-0 top-0 z-50 mx-10 mt-10 flex h-12 items-center justify-between bg-white p-4 shadow-md transition-transform duration-300 md:h-16 lg:mx-auto lg:max-w-4xl 2xl:mx-auto 2xl:max-w-7xl ${
         isMenuOpen ? 'rounded-t-3xl' : 'rounded-full shadow-md'
-      }`}
+      } ${isVisible ? 'translate-y-0 transform' : '-translate-y-24 transform md:-translate-y-32'}`}
     >
       {/* Logo */}
-      <Link href="/" className="relative h-12 w-40">
+      <Link href="/" className="relative h-8 w-32 md:h-12 md:w-40">
         <Image
           src="https://sharans1998.github.io/yonitara-ui/logo.svg"
           fill

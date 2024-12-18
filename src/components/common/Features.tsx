@@ -13,7 +13,7 @@ type FeatureProps = {
 
 const Features = ({ title, subTitle, features }: FeatureProps) => {
   return (
-    <div className="flex w-full flex-col items-center gap-8">
+    <div className="my-8 flex w-full flex-col items-center gap-8">
       {title && (
         <h2 className="mb-4 text-center text-2xl font-semibold text-primary md:text-4xl">
           {title}
