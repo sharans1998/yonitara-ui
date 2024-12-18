@@ -73,6 +73,13 @@ export default function Navbar() {
         >
           About Us
         </Link>
+        <Link
+          href="/teachers-training"
+          className="text-gray-700 m-2 w-full p-2 hover:text-blue-500 md:p-0"
+          onClick={toggleMenu}
+        >
+          Teachers Training
+        </Link>
       </div>
       {/* CTA Button */}
       <div className="hidden md:block">
