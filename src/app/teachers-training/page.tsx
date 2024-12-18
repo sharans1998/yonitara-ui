@@ -10,7 +10,7 @@ const TeachersTrainingPage = () => {
       <HeroBanner
         title="Pre & Postnatal Teacher’s Training Certification"
         subtitle="Specialized Training for Experts Supporting Pre and Postnatal Mothers"
-        imageSrc="/images/teachers-training.jpg"
+        imageSrc="/images/ttc/ttc/Yoga Group Classes Inside Gym.jpg"
         imageAlt="Teachers Training"
         ctaText="Learn More"
         ctaLink="/teachers-training"
