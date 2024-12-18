@@ -7,14 +7,16 @@ import React from 'react';
 const TeachersTrainingPage = () => {
   return (
     <>
-      <HeroBanner
-        title="Pre & Postnatal Teacher’s Training Certification"
-        subtitle="Specialized Training for Experts Supporting Pre and Postnatal Mothers"
-        imageSrc="/images/ttc/ttc/Yoga Group Classes Inside Gym.jpg"
-        imageAlt="Teachers Training"
-        ctaText="Learn More"
-        ctaLink="/teachers-training"
-      />
+      <div className="relative h-screen w-full">
+        <HeroBanner
+          title="Pre & Postnatal Teacher’s Training Certification"
+          subtitle="Specialized Training for Experts Supporting Pre and Postnatal Mothers"
+          imageSrc="/images/ttc/ttc/Yoga Group Classes Inside Gym.jpg"
+          imageAlt="Teachers Training"
+          ctaText="Learn More"
+          ctaLink="/teachers-training"
+        />
+      </div>
       <Section backgroundColor="#f5e7fc">
         <Features
           title="What we offer"

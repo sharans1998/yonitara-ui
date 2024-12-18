@@ -8,7 +8,7 @@ type FeatureItemProps = {
 };
 const FeatureItem = ({ title, description, icon }: FeatureItemProps) => {
   return (
-    <div className="flex w-1/3 flex-col items-center">
+    <div className="flex flex-col items-center lg:w-1/3">
       <Image
         width={64}
         height={64}
