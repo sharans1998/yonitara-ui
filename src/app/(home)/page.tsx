@@ -5,8 +5,11 @@ import React from 'react';
 import CardSection from '@/components/home/CardSection';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import { GiLotus } from 'react-icons/gi';
+import UnderDevelopment from '@/components/layout/UnderDevelopment';
 
 const Home = () => {
+  return <UnderDevelopment />;
+
   return (
     <div className="snap-y snap-mandatory overflow-y-auto">
       <div className="relative h-screen w-full">

@@ -102,7 +102,7 @@ export default function Navbar() {
         </Link>
       </div>
       {/* CTA Button */}
-      <div className="hidden md:block">
+      <div className="hidden">
         <Button variant="primary" href="/contact" label="Contact Us" />
       </div>
     </nav>
