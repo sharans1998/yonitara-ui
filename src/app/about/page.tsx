@@ -2,9 +2,12 @@ import MissionVisionSection from '@/components/about/MissionVisionSection';
 import ImageTitleDescription from '@/components/common/ImageTitleDescription';
 import HeroBannerSection from '@/components/home/HeroBannerSection';
 import Section from '@/components/layout/Section';
+import UnderDevelopment from '@/components/layout/UnderDevelopment';
 import React from 'react';
 
 const About = () => {
+  return <UnderDevelopment />;
+
   return (
     <div className="snap-y snap-mandatory overflow-y-auto">
       <div className="relative h-screen w-full">

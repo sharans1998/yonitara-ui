@@ -2,9 +2,12 @@ import ElementsList from '@/components/common/ElementsList';
 import Features from '@/components/common/Features';
 import HeroBanner from '@/components/common/HeroBanner';
 import Section from '@/components/layout/Section';
+import UnderDevelopment from '@/components/layout/UnderDevelopment';
 import React from 'react';
 
 const TeachersTrainingPage = () => {
+  return <UnderDevelopment />;
+
   return (
     <>
       <div className="relative h-screen w-full">

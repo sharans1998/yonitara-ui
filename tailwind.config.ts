@@ -24,8 +24,17 @@ const config: Config = {
         buttonPrimary: '#f8d958',
         buttonSecondary: '#e96e2a',
       },
+      animation: {
+        bounce: 'bounce 2s infinite',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+      }
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
