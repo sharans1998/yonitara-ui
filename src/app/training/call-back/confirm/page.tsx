@@ -12,8 +12,8 @@ const CallBackConfirm = () => {
               Thank You for Booking Your Call!
             </h1>
             <h5 className="font-poppins w-full text-center text-xl text-black">
-              We're thrilled to have you take the first step toward becoming a
-              certified Pre-Natal and Post-Natal Yoga Trainer.
+              We&apos;re thrilled to have you take the first step toward
+              becoming a certified Pre-Natal and Post-Natal Yoga Trainer.
             </h5>
             <ElementsList
               title=""

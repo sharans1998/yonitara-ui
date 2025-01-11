@@ -15,7 +15,8 @@ function UnderDevelopment() {
         Namaste! This Page is Under Construction
       </h1>
       <p className="text-gray-500 mt-5">
-        We're currently working hard to bring you the best possible experience.
+        We&apos;re currently working hard to bring you the best possible
+        experience.
       </p>
       <p className="text-gray-500 mt-5">Please check back soon!</p>
     </div>

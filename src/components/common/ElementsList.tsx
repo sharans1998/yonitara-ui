@@ -1,7 +1,6 @@
 import React from 'react';
 import ElementItem from './ElementItem';
 import Image from 'next/image';
-import ContentWrapper from '../layout/ContentWrapper';
 
 type ElementItemProps = {
   title: string;
