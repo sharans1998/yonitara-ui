@@ -17,7 +17,7 @@ const TrainingPage = () => {
             <Button
               label="Book a Free Strategy Call"
               variant="tertiary"
-              href="/call-back"
+              href="/training/call-back"
             />
           </div>
         </Section>
