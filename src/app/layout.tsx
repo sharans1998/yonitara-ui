@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins, Roboto_Mono } from 'next/font/google';
-import Navbar from '@/components/layout/Navbar';
+// import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 const poppins = Poppins({
@@ -30,10 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${roboto_mono.variable} antialiased bg-secondary`}
+        className={`${poppins.variable} ${roboto_mono.variable} bg-secondary antialiased`}
       >
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
+        <div className="flex min-h-screen flex-col">
+          {/* <Navbar /> */}
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
