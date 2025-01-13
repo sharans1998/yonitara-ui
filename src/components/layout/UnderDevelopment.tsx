@@ -5,7 +5,7 @@ function UnderDevelopment() {
   return (
     <div className="bg-gray-100 flex h-screen flex-col items-center justify-center">
       <Image
-        src="https://sharans1998.github.io/yonitara-ui/images/UnderDevelopment.JPG" // Replace with an image of a yoga pose or a "Coming Soon" graphic
+        src="https://yonitara.com/images/UnderDevelopment.JPG" // Replace with an image of a yoga pose or a "Coming Soon" graphic
         alt="Yoga in Progress"
         width={300}
         height={300}

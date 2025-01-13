@@ -15,8 +15,8 @@ const About = () => {
           toggle
           title="About Us"
           subTitle="Wombs intelligence to heal and empower holistic womb intelligence"
-          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-3.png"
-          smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-3-sm.png"
+          image="https://yonitara.com/images/hero-banner-3.png"
+          smallImage="https://yonitara.com/images/hero-banner-3-sm.png"
         />
       </div>
       <Section>

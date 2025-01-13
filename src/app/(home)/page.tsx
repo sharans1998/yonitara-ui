@@ -16,15 +16,15 @@ const Home = () => {
         <HeroBannerSection
           title="Empowering With Informed Choices"
           subTitle="Wombs intelligence to heal and empower/ holistic womb intelligence"
-          image="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2.png"
-          smallImage="https://sharans1998.github.io/yonitara-ui/images/hero-banner-2-sm.png"
+          image="https://yonitara.com/images/hero-banner-2.png"
+          smallImage="https://yonitara.com/images/hero-banner-2-sm.png"
         />
       </div>
       <Section>
         <ImageTitleDescription
           title="YoniTara"
           description="At YoniTara Birth, we empower women through a holistic approach to health and wellness. We believe in the natural power of a woman’s body to heal and thrive with the right support. From menarche to menopause, the female body is designed to nurture life, but its wisdom can be overshadowed by misinformation or treating women as weak."
-          image="https://sharans1998.github.io/yonitara-ui/images/intro-2.jpeg"
+          image="https://yonitara.com/images/intro-2.jpeg"
           toggle={false}
         />
       </Section>
@@ -32,7 +32,7 @@ const Home = () => {
         <ImageTitleDescription
           title="YoniTara"
           description="We offer holistic programs that empower women, whether you're looking to support others through pre and postnatal yoga certifications or heal yourself with yoga and lifestyle sessions focused on gynecological health, pregnancy, and postpartum recovery."
-          image="https://sharans1998.github.io/yonitara-ui/images/intro.jpeg"
+          image="https://yonitara.com/images/intro.jpeg"
           toggle={true}
         />
       </Section>

@@ -44,7 +44,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" className="relative h-8 w-32 md:h-12 md:w-40">
         <Image
-          src="https://sharans1998.github.io/yonitara-ui/logo.svg"
+          src="https://yonitara.com/logo.svg"
           fill
           alt="Logo"
           className="object-contain"

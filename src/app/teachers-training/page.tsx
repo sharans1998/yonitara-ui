@@ -14,7 +14,7 @@ const TeachersTrainingPage = () => {
         <HeroBanner
           title="Pre & Postnatal Teacher’s Training Certification"
           subtitle="Specialized Training for Experts Supporting Pre and Postnatal Mothers"
-          imageSrc="https://sharans1998.github.io/yonitara-ui/images/ttc/Yoga Group Classes Inside Gym.jpg"
+          imageSrc="https://yonitara.com/images/ttc/Yoga Group Classes Inside Gym.jpg"
           imageAlt="Teachers Training"
           ctaText="Learn More"
           ctaLink="/teachers-training"
@@ -29,19 +29,19 @@ const TeachersTrainingPage = () => {
               title: 'Beyond Yoga',
               description:
                 'Gain knowledge in childbirth education, Ayurvedic lifestyle practices, postnatal rehabilitation, and Garbhsanskar, providing a well-rounded support system for mothers.',
-              icon: 'https://sharans1998.github.io/yonitara-ui/images/ttc/features/beyond-yoga.svg',
+              icon: 'https://yonitara.com/images/ttc/features/beyond-yoga.svg',
             },
             {
               title: 'Holistic Approach',
               description:
                 'Address emotional and mental health to help guide expectant mothers through a balanced and healthy pregnancy.',
-              icon: 'https://sharans1998.github.io/yonitara-ui/images/ttc/features/holistic-approach.svg',
+              icon: 'https://yonitara.com/images/ttc/features/holistic-approach.svg',
             },
             {
               title: 'Certification and Support',
               description:
                 'Upon completion, you will receive a globally recognized certification and ongoing mentorship from our Yonitara Birth Education Team.',
-              icon: 'https://sharans1998.github.io/yonitara-ui/images/ttc/features/certification-support.svg',
+              icon: 'https://yonitara.com/images/ttc/features/certification-support.svg',
             },
           ]}
         />
@@ -49,7 +49,7 @@ const TeachersTrainingPage = () => {
       <Section>
         <ElementsList
           title="Why Join Our Program"
-          image="https://sharans1998.github.io/yonitara-ui/images/ttc/why-join.jpg"
+          image="https://yonitara.com/images/ttc/why-join.jpg"
           items={[
             {
               title: 'Passionate About Women’s Health',
@@ -78,7 +78,7 @@ const TeachersTrainingPage = () => {
         <ElementsList
           toggle
           title="Master Certification Includes"
-          image="https://sharans1998.github.io/yonitara-ui/images/ttc/master-certification-includes.jpg"
+          image="https://yonitara.com/images/ttc/master-certification-includes.jpg"
           items={[
             {
               title: 'Yoga & Beyond',
@@ -104,7 +104,7 @@ const TeachersTrainingPage = () => {
       <Section>
         <ElementsList
           title="What You'll Learn"
-          image="https://sharans1998.github.io/yonitara-ui/images/ttc/what-you-learn.jpg"
+          image="https://yonitara.com/images/ttc/what-you-learn.jpg"
           items={[
             {
               title: 'Holistic Pregnancy & Postpartum Support',
@@ -142,7 +142,7 @@ const TeachersTrainingPage = () => {
         <ElementsList
           toggle
           title="In This Program, You will Learn"
-          image="https://sharans1998.github.io/yonitara-ui/images/ttc/in-this-program.jpg"
+          image="https://yonitara.com/images/ttc/in-this-program.jpg"
           items={[
             {
               title: 'Why Moms should NOT be treated delicately',

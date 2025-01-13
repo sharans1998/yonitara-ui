@@ -17,7 +17,7 @@ const CallBackConfirm = () => {
             </h5>
             <ElementsList
               title=""
-              image="https://sharans1998.github.io/yonitara-ui/images/Callback-confirm.JPG"
+              image="https://yonitara.com/images/Callback-confirm.JPG"
               items={[
                 {
                   title: 'Confirmation Email',

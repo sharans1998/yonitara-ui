@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="mb-4 flex items-center justify-between">
           <div className="relative h-12 w-40">
             <Image
-              src="https://sharans1998.github.io/yonitara-ui/logo.svg"
+              src="https://yonitara.com/logo.svg"
               fill
               alt="Logo"
               className="object-contain"
