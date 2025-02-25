@@ -1,9 +1,7 @@
 import ElementsList from '@/components/common/ElementsList';
 import Features from '@/components/common/Features';
-import HeroBanner from '@/components/common/HeroBanner';
 import HeroBannerSection from '@/components/home/HeroBannerSection';
 import Section from '@/components/layout/Section';
-import UnderDevelopment from '@/components/layout/UnderDevelopment';
 import React from 'react';
 
 const PostpartumFitnessPage = () => {
