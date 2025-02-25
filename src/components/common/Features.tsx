@@ -24,7 +24,7 @@ const Features = ({ title, subTitle, features }: FeatureProps) => {
           {subTitle}
         </p>
       )}
-      <div className="flex flex-col gap-8 md:flex-row">
+      <div className="flex flex-col justify-around gap-8 md:flex-row md:flex-wrap md:gap-4">
         {features.map((feature, index) => (
           <FeatureItem key={index} {...feature} />
         ))}
