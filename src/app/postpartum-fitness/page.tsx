@@ -2,6 +2,7 @@ import ImageWrapper from '@/components/common/ImageWrapper';
 import NameEmailPhoneForm from '@/components/forms/NameEmailPhoneForm';
 import ContentWrapper from '@/components/layout/ContentWrapper';
 import Section from '@/components/layout/Section';
+import { Metadata } from 'next';
 import React from 'react';
 
 const PostpartumFitnessPage = () => {
@@ -69,6 +70,21 @@ const PostpartumFitnessPage = () => {
       </ContentWrapper>
     </Section>
   );
+};
+
+export const metadata: Metadata = {
+  title: 'Yonitara',
+  description: 'Free Workshop: Postpartum Fitness — Abhyasa Style',
+  openGraph: {
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dyb4kpthp/image/upload/v1740576966/HEIC_to_WEBP_Shruthi_Tanvi_yjhoin.webp',
+        width: 800,
+        height: 600,
+        alt: 'Image of Shruthi and Tanvi',
+      },
+    ],
+  },
 };
 
 export default PostpartumFitnessPage;
