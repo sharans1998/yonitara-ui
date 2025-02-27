@@ -17,13 +17,14 @@ const PostpartumFitnessPage = () => {
             {subTitle}
           </p>
           <div className="mx-auto mb-8 max-w-[600px]">
-            <p>
+            <p className="mb-4">
               <strong>💖 Mama, we see you! </strong>
               “Will my body ever feel strong again?” We&apos;ve been there - and
               we&apos;ve got you. As moms and postpartum fitness experts, we
               created a proven formula that helped us heal, feel strong, and
               thrive - and now we&apos;re sharing it with you!
             </p>
+            <NameEmailPhoneForm />
             <p className="mt-4">
               <strong>👩🏻‍🍼 Led by New Moms & Experts:</strong> <br />
               🔥 Shruthi Jain - Marathoner, Pregnancy & Postpartum Trainer,
@@ -65,7 +66,6 @@ const PostpartumFitnessPage = () => {
               together!
             </p>
           </div>
-          <NameEmailPhoneForm />
         </div>
       </ContentWrapper>
     </Section>
