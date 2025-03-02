@@ -201,7 +201,6 @@ function MyForm() {
       )}
       {formState === FORM_STATE.loading && (
         <div className="relative flex h-full w-full items-center justify-center">
-          <Confetti className="h-full w-full" />
           <div
             className="mx-auto max-w-md rounded-md p-8 shadow-lg"
             id="form-bLpqKfQVDZus-loading"
