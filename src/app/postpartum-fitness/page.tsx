@@ -1,5 +1,5 @@
 import ImageWrapper from '@/components/common/ImageWrapper';
-import NameEmailPhoneForm from '@/components/forms/NameEmailPhoneForm';
+import NameEmailPhone from '@/components/forms/NameEmailPhone';
 import ContentWrapper from '@/components/layout/ContentWrapper';
 import Section from '@/components/layout/Section';
 import { Metadata } from 'next';
@@ -24,7 +24,7 @@ const PostpartumFitnessPage = () => {
               created a proven formula that helped us heal, feel strong, and
               thrive - and now we&apos;re sharing it with you!
             </p>
-            <NameEmailPhoneForm />
+            <NameEmailPhone />
             <p className="mt-4">
               <strong>👩🏻‍🍼 Led by New Moms & Experts:</strong> <br />
               🔥 Shruthi Jain - Marathoner, Pregnancy & Postpartum Trainer,
